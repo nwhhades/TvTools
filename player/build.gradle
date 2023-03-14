@@ -19,6 +19,7 @@ android {
         minSdk 19
         targetSdk 32
 
+        multiDexEnabled true
         consumerProguardFiles "consumer-rules.pro"
     }
 
