@@ -15,17 +15,6 @@ public class App extends BaseApplication {
     @Override
     protected void init() {
 
-//        PlayerConfigUtils.Version.setVersion("111");
-//        PlayerConfigUtils.INSTANCE.setImpl(new PlayerConfigUtils.Impl() {
-//            @Override
-//            public void action(VideoPlayerConfig config) {
-//                config.getList().add(new VideoPlayer("IJKb", IjkPlayerFactory.class.getName()));
-//                config.getList().add(new VideoPlayer("IJKb2", IjkPlayerFactory.class.getName()));
-//                //config.setCurPlayerName("IJKb");
-//            }
-//        });
-
-        RequestServer.setBaseUrl("http://101.133.235.5:8686/");
     }
 
     @Override
