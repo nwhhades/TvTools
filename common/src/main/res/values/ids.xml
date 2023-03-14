@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="iv_base_activity_main_bg" type="id" />
+    <item name="fl_base_activity_loading_view" type="id" />
+
+    <item name="v_top" type="id" />
+    <item name="v_bottom" type="id" />
+    <item name="v_left" type="id" />
+    <item name="v_right" type="id" />
+
+    <item name="btn1" type="id" />
+    <item name="btn2" type="id" />
+    <item name="btn3" type="id" />
+    <item name="btn4" type="id" />
+    <item name="btn5" type="id" />
+    <item name="btn6" type="id" />
+</resources>

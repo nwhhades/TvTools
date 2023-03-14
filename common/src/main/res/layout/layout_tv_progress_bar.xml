@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/v_left"
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/v_right"
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/v_top"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/v_bottom"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_time1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dip"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxWidth="100dip"
+        android:maxLines="1"
+        android:minWidth="50dip"
+        android:shadowColor="@color/black"
+        android:shadowRadius="5"
+        android:text="@string/tv_progress_bar_progress_time"
+        android:textColor="@color/white"
+        android:textSize="23sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tv_spilt"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_spilt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dip"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:shadowColor="@color/black"
+        android:shadowRadius="5"
+        android:text="@string/tv_progress_bar_progress_time_split"
+        android:textColor="@color/white"
+        android:textSize="23sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tv_time2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_time2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dip"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxWidth="100dip"
+        android:maxLines="1"
+        android:minWidth="50dip"
+        android:shadowColor="@color/black"
+        android:shadowRadius="5"
+        android:text="@string/tv_progress_bar_progress_time"
+        android:textColor="@color/white"
+        android:textSize="23sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.nwhhades.common.view.TvSeekBar
+        android:id="@+id/tsb_progress"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dip"
+        android:minWidth="100dip"
+        android:nextFocusLeft="@id/v_left"
+        android:nextFocusRight="@id/v_right"
+        android:nextFocusUp="@id/v_top"
+        android:nextFocusDown="@id/v_bottom"
+        android:theme="@style/TvSeekBar"
+        app:layout_constraintBottom_toTopOf="@id/v_bottom"
+        app:layout_constraintEnd_toStartOf="@id/tv_time1"
+        app:layout_constraintStart_toEndOf="@id/v_left"
+        app:layout_constraintTop_toBottomOf="@id/v_top" />
+
+</merge>

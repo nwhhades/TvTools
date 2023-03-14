@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="LoadingProgressBar" parent="Widget.AppCompat.ProgressBar">
+        <item name="colorControlActivated">@color/focus_focused</item>
+    </style>
+
+    <style name="TvSeekBar" parent="Widget.AppCompat.SeekBar">
+        <item name="colorControlNormal">@color/white</item>
+        <item name="colorControlActivated">@color/focus_checked</item>
+        <item name="colorControlHighlight">@color/focus_checked</item>
+        <item name="android:thumb">@drawable/abc_seekbar_thumb_material</item>
+    </style>
+
+    <style name="TvSpinner" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorControlNormal">@color/gray</item>
+        <item name="colorControlActivated">@color/focus_focused</item>
+        <item name="colorControlHighlight">@color/focus_checked</item>
+    </style>
+</resources>
